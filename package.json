@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://nulab.backlog.jp/git/EXPERIMENT/backlog-kintone-handson.git"
+    "url": "https://github.com/nulab/backlog-kintone-handson.git"
   },
   "author": "Masahiro Yoshizawa",
   "license": "ISC"
