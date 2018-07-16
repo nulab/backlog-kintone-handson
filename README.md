@@ -2,7 +2,7 @@
 
 This is a sample code of collaboration between Backlog and kintone.
 
-これは kintone devCamp 2018 ハンズオン向けのサンプルコードです。
+これは [kintone devCamp 2018](https://developer.cybozu.io/hc/ja/articles/360001062323-kintone-devCamp-2018) ハンズオン向けのサンプルコードです。
 
 ## Functions
 
