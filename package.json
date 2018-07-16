@@ -1,0 +1,22 @@
+{
+  "name": "backlog-kintone-handson",
+  "version": "1.0.0",
+  "description": "Sample code of collaboration between Backlog and kintone",
+  "main": "handler.js",
+  "dependencies": {
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.25.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://nulab.backlog.jp/git/EXPERIMENT/backlog-kintone-handson.git"
+  },
+  "author": "Masahiro Yoshizawa",
+  "license": "ISC"
+}
