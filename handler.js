@@ -98,9 +98,9 @@ module.exports.addIssueToBacklog = (event, context, callback) => {
     const description = record['Description']['value']
 
     let priorityId;
-    if (record['Priority'] == '高') {
+    if (record['Priority']['value'] == '高') {
         priorityId = 2;
-    } else if (record['Priority'] == '低') {
+    } else if (record['Priority']['value'] == '低') {
         priorityId = 4;
     } else {
         priorityId = 3;
