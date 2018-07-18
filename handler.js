@@ -53,8 +53,8 @@ module.exports.helloHelloHello = (event, context, callback) => {
             });
     };
 
-    const callHello3 = async (message) => {
-        const response1 = await callHello(message);
+    (async () => {
+        const response1 = await callHello('world');
         console.log(response1);
 
         const response2 = await callHello(response1.message);
@@ -64,9 +64,7 @@ module.exports.helloHelloHello = (event, context, callback) => {
         console.log(response3);
 
         callback(null, {statusCode: 200, body: response3.message});
-    };
-
-    callHello3('world');
+    })();
 };
 
 module.exports.addIssueToBacklog = (event, context, callback) => {
@@ -110,7 +108,7 @@ module.exports.addIssueToBacklog = (event, context, callback) => {
     const kintoneRecordNumber = record['RecordNumber']['value'];
     const kintoneRecordUrl = reqBody['url'];
 
-    const addIssue = async (subject, description, priorityId, createdBy, kintoneRecordUrl, kintoneRecordNumber) => {
+    (async () => {
         const body = await backlog.addIssue(subject, description, priorityId, createdBy, kintoneRecordUrl);
 
         console.log('SUCCESS:');
@@ -123,9 +121,7 @@ module.exports.addIssueToBacklog = (event, context, callback) => {
         console.log(body2);
 
         callback(null, {statusCode: 200});
-    };
-
-    addIssue(subject, description, priorityId, createdBy, kintoneRecordUrl, kintoneRecordNumber);
+    })();
 };
 
 module.exports.updateIssueOnKintone = (event, context, callback) => {
@@ -172,7 +168,7 @@ module.exports.updateIssueOnKintone = (event, context, callback) => {
         return;
     }
 
-    const closeIssueOnKintone = async (kintoneRecordNumber, content) => {
+    (async () => {
         const body = await kintone.updateStatus(kintoneRecordNumber, '完了');
 
         console.log(body);
@@ -183,7 +179,5 @@ module.exports.updateIssueOnKintone = (event, context, callback) => {
         }
 
         callback(null, {statusCode: 200});
-    };
-
-    closeIssueOnKintone(kintoneRecordNumber, content);
+    })();
 };
