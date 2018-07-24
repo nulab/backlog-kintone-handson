@@ -10,6 +10,25 @@ provider:
   profile: ${opt:profile, self:custom.defaultProfile}
   region: ${opt:region, self:custom.defaultRegion}
 
+# Example of resource policy for Amazon API Gateway
+#  resourcePolicy:
+#    - Effect: Allow
+#      Principal: "*"
+#      Action: execute-api:Invoke
+#      Resource:
+#        - execute-api:/*/*/*
+#      Condition:
+#        IpAddress:
+#          aws:SourceIp:
+#            # Backlog webhook (as of 2018-07-24)
+#            - "52.199.190.133"
+#            - "54.238.59.48"
+#            - "54.65.8.249"
+#            - "52.192.161.184"
+#            - "52.68.222.36"
+#            # kintone webhook (as of 2018-07-24)
+#            - "103.79.14.0/24"
+
 custom:
   defaultStage: dev
   defaultProfile: default
