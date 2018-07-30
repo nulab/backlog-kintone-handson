@@ -4,7 +4,11 @@ This is a sample code of collaboration between Backlog and kintone.
 
 これは [kintone devCamp 2018](https://developer.cybozu.io/hc/ja/articles/360001062323-kintone-devCamp-2018) ハンズオン向けのサンプルコードです。
 
-## Functions
+## ハンズオン資料
+
+https://speakerdeck.com/nulabinc/kintone-devcamp-2018-handson
+
+## Lambda 関数
 
 - hello
     - サンプル1. JSON を受け取り、JSON を返すだけの単純なエンドポイント
