@@ -4,11 +4,11 @@
   "description": "Sample code of collaboration between Backlog and kintone",
   "main": "handler.js",
   "dependencies": {
-    "request": "^2.87.0",
+    "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "serverless-offline": "^3.25.5"
+    "serverless-offline": "^3.33.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
